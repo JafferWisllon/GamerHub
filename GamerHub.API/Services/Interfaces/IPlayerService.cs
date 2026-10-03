@@ -6,4 +6,5 @@ namespace GamerHub.API.Services.Interfaces;
 public interface IPlayerService
 {
     Task<(bool isSuccess, ValidationRequestException? exceptionViewModel)> PostPlayer(PostPlayer player);
+    Task<(bool isSuccess, ValidationRequestException? exceptionViewModel)> PostScore(int id, PostScore request);
 }
